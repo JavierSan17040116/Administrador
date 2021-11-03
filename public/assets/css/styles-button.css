@@ -1,0 +1,61 @@
+@media (max-width: 991px)
+{
+	a.animated-button.thar-three
+	{
+		cursor: pointer;
+		display: block;
+		position: relative;
+		transition: all 0.4s cubic-bezier(0.09, 0, 0.3, 1);
+		0s;
+	}
+	a.animated-button.thar-three:hover
+	{
+		color: white !important;
+		background-color: transparent;
+		text-shadow: nthree;
+	}
+
+}
+
+
+@media (min-width: 992px)
+{
+	a.animated-button.thar-three 
+	{
+		cursor: pointer;
+		display: block;
+		position: relative;
+		transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
+		0s;
+	}
+	a.animated-button.thar-three:hover 
+	{
+		color: white !important;
+		background-color: transparent;
+		text-shadow: nthree;
+	}
+	a.animated-button.thar-three:hover:before 
+	{
+		left: 0%;
+		right: auto;
+		width: 100%;
+	}
+	a.animated-button.thar-three:before 
+	{
+		display: block;
+		position: absolute;
+		top: 0px;
+		right: 0px;
+		height: 100%;
+		width: 0px;
+		z-index: -1;
+		content: '';
+		color: #000 !important;
+		background: #334FA0;
+		margin-left: 2px;
+		border-radius: 10px;
+		transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
+		0s;
+	}
+}
+

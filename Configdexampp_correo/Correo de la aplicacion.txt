@@ -1,0 +1,5 @@
+Correo:adaministradorutc2021@gmail.com
+
+Contraseña:utc20218ing
+
+link de tutorial: https://www.configuroweb.com/como-enviar-correos-gmail-desde-php-con-la-funcion-mail-en-localhost-con-xampp/

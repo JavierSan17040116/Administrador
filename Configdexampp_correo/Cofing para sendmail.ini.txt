@@ -1,0 +1,8 @@
+smtp_server=smtp.gmail.com
+smtp_port=587
+auth_username=adaministradorutc2021@gmail.com
+auth_password=utc20218ing
+smtp_ssl=TLS
+error_logfile=error.log
+debug_logfile=debug.log
+force_sender=adaministradorutc2021@gmail.com

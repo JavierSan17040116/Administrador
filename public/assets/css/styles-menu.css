@@ -1,0 +1,32 @@
+div.barra
+{
+	position: fixed;
+	background-color:black;
+	width: 280px;
+	height: 100%;
+
+}
+h6.nombre
+{
+	padding-left: 5px;
+	color: white;
+}
+
+img.logo
+{
+	padding-top: 60px;
+}
+
+a.apartados
+{
+	color: white;
+	font-size: 20px;
+	padding-left: 20px;
+	text-decoration:none;
+}
+div.contenedor
+{
+	padding-left: 285px;
+	padding-right: 55px;
+	padding-top: 100px;
+}
