@@ -48,6 +48,7 @@ else{
     <center><img class="logo" src="../../public/assets/img/photos/logo.png"></center><br>
     <h6 class="nombre"><?php 
     echo$resultados['nombre'];?> <?php echo$resultados['apellidos'];?></h6>
+    <a class="apartados" href="../WEBSP/">Nueva Laptos</a><br>
     <a class="apartados" href="../Foro/" style="position: relative; top: 300px;">Foro | Comentarios</a><br>
     
   </div>

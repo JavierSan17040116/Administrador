@@ -3,9 +3,18 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <?php include '../../controller/bootstrap.php'; ?>
+  <link rel="stylesheet" type="text/css" href="../../public/assets/css/styles-button.css">
+  <link rel="stylesheet" type="text/css" href="../../public/assets/css/styles-menu.css">
+  <link rel="shortcut icon" href="../../public/assets/img/favicons/administrador-icon.png">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <title>Prouctos</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
 </head>
 
 <body>
@@ -14,7 +23,7 @@
             <div class="col-lg-4">
                 <div class="card">
                     <div class="card-header bg-primary">
-                        <h3 class="text-center">Registro de productos</h3>
+                        <h3 class="text-center">Registro de Lasptos</h3>
                     </div>
                     <div class="card-body">
                         <form action="" method="post" id="frm">
@@ -24,7 +33,7 @@
                                 <input type="text" name="codigo" id="codigo" placeholder="Codigo" class="form-control">
                             </div>
                             <div class="form-group">
-                                <label for="">Producto</label>
+                                <label for="">Nombre Lapto</label>
                                 <input type="text" name="producto" id="producto" placeholder="Descripción" class="form-control">
                             </div>
                             <div class="form-group">precio
@@ -47,7 +56,7 @@
                     <div class="col-lg-6 ml-auto">
                         <form action="" method="post">
                             <div class="form-group">
-                                <label for="buscra">Buscar:</label>
+                            <img src="dinosaur.jpg"> <label for="buscra">Buscar:</label>
                                 <input type="text" name="buscar" id="buscar" placeholder="Buscar..." class="form-control">
                             </div>
                         </form>
