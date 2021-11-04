@@ -17,7 +17,7 @@
 
 </head>
 
-<body>
+<body >
     <div class="container">
         <div class="row">
             <div class="col-lg-4">
@@ -28,24 +28,25 @@
                     <div class="card-body">
                         <form action="" method="post" id="frm">
                             <div class="form-group">
-                                <label for="">Codigo</label>
-                                <input type="hidden" name="idp" id="idp" value="">
-                                <input type="text" name="codigo" id="codigo" placeholder="Codigo" class="form-control">
+                            <label for="">Codigo</label> <img src="https://img.icons8.com/cotton/64/000000/online-coding.png" width="30" height="30"/>   <input type="hidden" name="idp" id="idp" value="">
+                             <input type="text" name="codigo" id="codigo" placeholder="Codigo" class="form-control">
                             </div>
                             <div class="form-group">
-                                <label for="">Nombre Lapto</label>
+                                <label for="">Nombre Lapto</label> <img src="https://img.icons8.com/fluency/48/000000/laptop.png " width="30" height="30"/>
                                 <input type="text" name="producto" id="producto" placeholder="Descripción" class="form-control">
                             </div>
-                            <div class="form-group">precio
-                                <label for="">Precio</label>
+                            <div class="form-group">
+                                <label for="">Precio </label> <img src="https://img.icons8.com/doodle/48/000000/laptop--v1.png"width="30" height="30"/>
                                 <input type="text" name="precio" id="precio" placeholder="Precio" class="form-control">
                             </div>
                             <div class="form-group">
-                                <label for="">Cantidad</label>
+                                <label for="">Cantidad</label> <img src="https://img.icons8.com/color/48/000000/how-many-quest.png" width="30" height="30"/>
                                 <input type="text" name="cantidad" id="cantidad" placeholder="cantidad" class="form-control">
                             </div>
                             <div class="form-group">
                                 <input type="button" value="Registrar" id="registrar" class="btn btn-primary btn-block">
+                                <br>    
+                            <input type="button" value="Salir" id="Salir" class="btn btn-danger"/> <input type="button" value="Pagina Anterior" id="pagina" class="btn btn-danger"/>
                             </div>
                         </form>
                     </div>
@@ -56,7 +57,9 @@
                     <div class="col-lg-6 ml-auto">
                         <form action="" method="post">
                             <div class="form-group">
-                            <img src="dinosaur.jpg"> <label for="buscra">Buscar:</label>
+                               
+                            <br><br>
+                                 <img src="../../public/assets/img/images/seo.png" width="30" height="30"> <label for="buscra">Buscar:</label><br>
                                 <input type="text" name="buscar" id="buscar" placeholder="Buscar..." class="form-control">
                             </div>
                         </form>
