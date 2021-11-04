@@ -18,6 +18,7 @@
 </head>
 
 <body >
+    <br>
     <div class="container">
         <div class="row">
             <div class="col-lg-4">
@@ -28,14 +29,15 @@
                     <div class="card-body">
                         <form action="" method="post" id="frm">
                             <div class="form-group">
-                            <label for="">Codigo</label> <img src="https://img.icons8.com/cotton/64/000000/online-coding.png" width="30" height="30"/>   <input type="hidden" name="idp" id="idp" value="">
-                             <input type="text" name="codigo" id="codigo" placeholder="Codigo" class="form-control">
+                            <label for="">Codigo</label> <img src="https://img.icons8.com/cotton/64/000000/online-coding.png" width="30" height="30"/>  
+                                 <input type="hidden" name="idp" id="idp" value="">
+                             <input type="text" name="codigo" id="codigo" placeholder="Codigo" class="form-control" required="">
                             </div>
                             <div class="form-group">
                                 <label for="">Nombre Lapto</label> <img src="https://img.icons8.com/fluency/48/000000/laptop.png " width="30" height="30"/>
-                                <input type="text" name="producto" id="producto" placeholder="Descripción" class="form-control">
+                                <input type="text" name="producto" id="producto" placeholder="Marca" class="form-control">
                             </div>
-                            <div class="form-group">
+                                                       <div class="form-group">
                                 <label for="">Precio </label> <img src="https://img.icons8.com/doodle/48/000000/laptop--v1.png"width="30" height="30"/>
                                 <input type="text" name="precio" id="precio" placeholder="Precio" class="form-control">
                             </div>
@@ -46,7 +48,7 @@
                             <div class="form-group">
                                 <input type="button" value="Registrar" id="registrar" class="btn btn-primary btn-block">
                                 <br>    
-                            <input type="button" value="Salir" id="Salir" class="btn btn-danger"/> <input type="button" value="Pagina Anterior" id="pagina" class="btn btn-danger"/>
+                            <input onclick="location.href='https://localhost/administrador/administrador/'" type="button" value="Salir" id="Salir" class="btn btn-danger"/> <input type="button" value="Pagina Anterior" id="pagina" class="btn btn-danger"/>
                             </div>
                         </form>
                     </div>
@@ -69,7 +71,8 @@
                     <thead class="thead-dark">
                         <tr>
                             <th>ID</th>
-                            <th>Descripción</th>
+                            <th>Codigo</th>
+                            <th>Marca</th>
                             <th>Precio</th>
                             <th>Cantidad</th>
                             <th>Acciones</th>
