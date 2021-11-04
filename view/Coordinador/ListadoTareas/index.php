@@ -1,5 +1,5 @@
 <?php 
-include_once '../../config/conexion.php';
+include_once '../../../config/conexion.php';
 session_start();
 $id= intval($_GET['id_user']);
 $session_name='usuario_' . $id;

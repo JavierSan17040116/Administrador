@@ -1,9 +1,16 @@
 <?php 
 include_once '../../../config/conexion.php';
 session_start();
-$usuario=$_SESSION['usuario'];
+$id= intval($_GET['id_user']);
+$session_name='usuario_' . $id;
+if (isset($_SESSION[$session_name])!='') {
+$usuario=$_SESSION[$session_name];
 $buscar=mysqli_query($conexion,"SELECT * FROM usuarios WHERE usuario = '$usuario';");
 $resultados=mysqli_fetch_array($buscar);
+}
+else{
+ header('location:https://localhost/administrador');
+}
 ?>
 <!DOCTYPE html>
 <html>
