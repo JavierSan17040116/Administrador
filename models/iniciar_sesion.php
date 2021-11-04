@@ -20,28 +20,29 @@ if ($datos['success'] == 1 && $datos['score'] >=0.5)
 	{
 		$usuario = $_POST['usuario'];
 		$password = $_POST['password'];
+		$encriptar = md5($password);
 
-		require '../config/conexion.php';
-		$query = "SELECT * FROM usuarios WHERE usuario='$usuario' AND password='$password'";
-		$result = mysqli_query($conexion, $query) or die(mysqli_error($conexion));
-		$user = mysqli_fetch_assoc($result);
+	}
+	require '../config/conexion.php';
+	$query = "SELECT * FROM usuarios WHERE usuario='$usuario' AND password='$encriptar'";
+	$result = mysqli_query($conexion, $query) or die(mysqli_error($conexion));
+	$user = mysqli_fetch_assoc($result);
 
-		if ($user['tipo_usuario'] == 'Administrador')
-		{	
-			$_SESSION['usuario_'. $user['user_id']] = $usuario;
-			header("Location: ../view/Administrador/AdministrarUsuarios/?id_user={$user['user_id']}");
-		}
-		elseif($user['tipo_usuario'] == 'Coordinador'){
-			$_SESSION['usuario_'. $user['user_id']] = $usuario;
-			header("Location: ../view/Coordinador/ListadoTareas/?id_user={$user['user_id']}");
-		}elseif ($user['tipo_usuario'] == 'Trabajador') {
-			$_SESSION['usuario_'. $user['user_id']] = $usuario;
-			header("Location: ../view/Trabajador/?id_user={$user['user_id']}");
-			
-		}else
-		{
-			header('Location: ../view/DatosIncorrectos/');
-		}
+	if ($user['tipo_usuario'] == 'Administrador')
+	{	
+		$_SESSION['usuario_'. $user['user_id']] = $usuario;
+		header("Location: ../view/Administrador/AdministrarUsuarios/?id_user={$user['user_id']}");
+	}
+	elseif($user['tipo_usuario'] == 'Coordinador'){
+		$_SESSION['usuario_'. $user['user_id']] = $usuario;
+		header("Location: ../view/Coordinador/ListadoTareas/?id_user={$user['user_id']}");
+	}elseif ($user['tipo_usuario'] == 'Trabajador') {
+		$_SESSION['usuario_'. $user['user_id']] = $usuario;
+		header("Location: ../view/Trabajador/?id_user={$user['user_id']}");
+
+	}else
+	{
+		header('Location: ../view/DatosIncorrectos/');
 	}
 }
 ?>
