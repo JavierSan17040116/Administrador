@@ -1,0 +1,5 @@
+USUARIO  	||  CONTRASEÑA
+Administrador	||  administrador
+Coordinador	||  Coordinador
+Trabajador	||  Trabajador
+Trabajador2	||  12345
