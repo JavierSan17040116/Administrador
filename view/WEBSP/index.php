@@ -1,3 +1,17 @@
+<?php 
+include_once '../../config/conexion.php';
+session_start();
+$id= intval($_GET['id_user']);
+$session_name='usuario_' . $id;
+if (isset($_SESSION[$session_name])!='') {
+$usuario=$_SESSION[$session_name];
+$buscar=mysqli_query($conexion,"SELECT * FROM usuarios WHERE usuario = '$usuario';");
+$resultados=mysqli_fetch_array($buscar);
+}
+else{
+  header('location:https://localhost/administrador');
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -25,9 +39,12 @@
                 <div class="card">
                     <div class="card-header bg-primary">
                         <h3 class="text-center">Registro de Lasptos</h3>
+                        <center>   <h6 class="nombre">Usuario: <?php 
+    echo$resultados['nombre'];?> <?php echo$resultados['apellidos'];?></h6></center>
                     </div>
                     <div class="card-body">
                         <form action="" method="post" id="frm">
+                 
                             <div class="form-group">
                             <label for="">Codigo</label> <img src="https://img.icons8.com/cotton/64/000000/online-coding.png" width="30" height="30"/>  
                                  <input type="hidden" name="idp" id="idp" value="">
@@ -60,9 +77,9 @@
                         <form action="" method="post">
                             <div class="form-group">
                                
-                            <br><br>
-                                 <img src="../../public/assets/img/images/seo.png" width="30" height="30"> <label for="buscra">Buscar:</label><br>
-                                <input type="text" name="buscar" id="buscar" placeholder="Buscar..." class="form-control">
+                            <br>
+                            <img src="../../public/assets/img/images/seo.png" width="30" height="30"> <label for="buscra">Buscar:</label>
+                                   <input type="text" name="buscar" id="buscar" placeholder="Buscar..." class="form-control">
                             </div>
                         </form>
                     </div>

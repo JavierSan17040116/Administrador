@@ -47,9 +47,9 @@ header('location:https://localhost/administrador');
   <div class="barra">
     <center><img class="logo" src="../../../public/assets/img/photos/logo.png"></center><br>
     <h6 class="nombre"><?php echo$resultados['nombre'];?> <?php echo$resultados['apellidos'];?></h6>
-    <a class="apartados" href="../AdministrarUsuarios/">Administrar Usuarios</a><br>
+    <a class="apartados" href="../AdministrarUsuarios/index.php?id_user=<?php echo intval($_GET['id_user']) ?>">Administrar Usuarios</a><br>
     <a class="apartados" href="#" style="pointer-events: none; color: grey;" >Administrar Tareas</a><br>
-    <a class="apartados" href="../CrearTareas/">Crear Tareas</a>
+    <a class="apartados" href="../CrearTareas/index.php?id_user=<?php echo intval($_GET['id_user']) ?>">Crear Tareas</a>
   </div>
 
   <div class="contenedor">

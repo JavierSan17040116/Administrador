@@ -48,8 +48,8 @@ else{
     <center><img class="logo" src="../../../public/assets/img/photos/logo.png"></center><br>
     <h6 class="nombre"><?php echo$resultados['nombre'];?> <?php echo$resultados['apellidos'];?></h6>
     <a class="apartados" href="#" style="pointer-events: none; color: grey;">Listado de Tareas</a><br>
-    <a class="apartados" href="../TareasActivas/">Tareas Activas</a><br>
-    <a class="apartados" href="../../Foro/" style="position: relative; top: 300px;">Foro | Comentarios</a><br>
+    <a class="apartados" href="../TareasActivas/index.php?id_user=<?php echo intval($_GET['id_user']) ?>">Tareas Activas</a><br>
+    <a class="apartados" href="../../Foro/index.php?id_user=<?php echo intval($_GET['id_user']) ?>" style="position: relative; top: 300px;">Foro | Comentarios</a><br>
     
   </div>
 
