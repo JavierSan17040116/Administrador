@@ -48,7 +48,7 @@ else{
     <center><img class="logo" src="../../public/assets/img/photos/logo.png"></center><br>
     <h6 class="nombre"><?php 
     echo$resultados['nombre'];?> <?php echo$resultados['apellidos'];?></h6>
-    <a class="apartados" href="../WEBSP/index.php?id_user=<?php echo intval($_GET['id_user']) ?>">Nueva Laptos</a><br>
+    <a class="apartados" href="../WEBSP/index.php?id_user=<?php echo intval($_GET['id_user']) ?>">Material de equipo </a><br>
     <a class="apartados" href="../Foro/index.php?id_user=<?php echo intval($_GET['id_user']) ?>" style="position: relative; top: 300px;">Foro | Comentarios</a><br>
     
   </div>

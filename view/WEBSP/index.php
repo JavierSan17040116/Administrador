@@ -65,8 +65,12 @@ else{
                             <div class="form-group">
                                 <input type="button" value="Registrar" id="registrar" class="btn btn-primary btn-block">
                                 <br>    
-                            <input onclick="location.href='https://localhost/administrador/administrador/'" type="button" value="Salir" id="Salir" class="btn btn-danger"/> <input type="button" value="Pagina Anterior" id="pagina" class="btn btn-danger"/>
-                            </div>
+                                <center>
+                                <input onclick="location.href='../Trabajador/index.php?id_user=<?php echo intval($_GET['id_user']) ?>'" type="button" value="Trabajador" id="Trabajador" class="btn btn-danger"/> 
+                            <input onclick="location.href='https://localhost/administrador/administrador/'" type="button" value="Salir" id="Salir" class="btn btn-danger"/> 
+                            </center>   
+                        </div>
+
                         </form>
                     </div>
                 </div>
