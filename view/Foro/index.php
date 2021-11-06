@@ -43,7 +43,7 @@ else{
 		</div>
 	</nav><br><br><br>
 	<div class="container">
-		<a href="formulario.php"><button class="btn btn-secondary">Nuevo Tema</button></a>
+		<a href="formulario.php?id_user=<?php echo intval($_GET['id_user']) ?>"><button class="btn btn-secondary">Nuevo Tema</button></a>
 	</div><br><br>
 	<div class="container">
 		<h3>Temas ya creados</h3>
