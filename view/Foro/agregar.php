@@ -33,7 +33,7 @@
 				Header("Location: foro.php?id=$identificador");
 				exit();
 			}
-			Header("Location: index.php");
+			Header("Location: index.php?id_user=$id");
 		}
 	}
 ?>
