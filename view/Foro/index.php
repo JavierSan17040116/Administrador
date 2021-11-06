@@ -1,3 +1,17 @@
+<?php 
+include_once '../../config/conexion.php';
+session_start();
+$id= intval($_GET['id_user']);
+$session_name='usuario_' . $id;
+if (isset($_SESSION[$session_name])!='') {
+$usuario=$_SESSION[$session_name];
+$buscar=mysqli_query($conexion,"SELECT * FROM usuarios WHERE usuario = '$usuario';");
+$resultados=mysqli_fetch_array($buscar);
+}
+else{
+  header('location:https://localhost/administrador');
+}
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -12,14 +26,17 @@
 <body>
 	<nav class="navbar navbar-expand-lg navbar-light fixed-top" style="background-color:#233e8b;">
 		<div class="container-fluid ">
+		<h6 class="nombre">Usuario: <?php 
+    echo$resultados['nombre'];?> <?php echo$resultados['apellidos'];?></h6>
 			
 			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 			</button>
 			<div class="collapse navbar-collapse justify-content-end" id="navbarNav" >
+			
 				<ul class="navbar-nav" >
 					<li class="nav-item">
-						<a class="nav-link animated-button thar-three" href="../Trabajador">Regresar</a>
+						<a class="nav-link animated-button thar-three" href="../Trabajador/index.php?id_user=<?php echo intval($_GET['id_user']) ?>">Regresar</a>
 					</li>
 				</ul>
 			</div>
